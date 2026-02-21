@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Personal Investment Tracker
+  servlet:
+    context-path: "/personal-investment-tracker/api/v1/"
+kite:
+  api_key: ${KITE_API_KEY}
+  version: ${KITE_API_VERSION}
+  host:
+    app_host: ${KITE_MAIN_HOST}
+    api_host: ${KITE_API_HOST}
+  service:
+    login_url: ${KITE_SERVICE_USER_LOGIN_URL}
+    profile_url: ${KITE_SERVICE_USER_PROFILE_URL}
+    session_url: ${KITE_SERVICE_USER_SESSION_URL}
+
+
+sonar:
+  exclusions: "**/com/vk/pit/constants/**"
