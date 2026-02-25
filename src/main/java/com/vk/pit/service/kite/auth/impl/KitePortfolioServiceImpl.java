@@ -21,12 +21,11 @@ public class KitePortfolioServiceImpl implements KitePortfolioService {
     }
 
     @Override
-    public ResponseDataWrapper<UserProfileData> getUserProfile() {
-        HttpHeaders requestHeaders = new HttpHeaders();
-        KiteServiceUtility.addKiteAPIHeaders(requestHeaders);
+    public ResponseDataWrapper<UserProfileData> getUserProfile(HttpHeaders headers) {
+        KiteServiceUtility.addKiteAPIHeaders(headers);
 //        String getProfileUrl = kiteConfigs.getHost().getApiHost()+kiteConfigs.getService().getProfileUrl();
         String getProfileUrl = "https://api.kite.trade/user/profile";
-        return kiteServiceHandler.getUserProfile(getProfileUrl, requestHeaders);
+        return kiteServiceHandler.getUserProfile(getProfileUrl, headers);
     }
 
 //    public ResponseDataWrapper<UserProfileData> getUserProfile() {

@@ -2,9 +2,10 @@ package com.vk.pit.service.kite.auth;
 
 import com.vk.pit.entity.pojo.ResponseDataWrapper;
 import com.vk.pit.entity.pojo.user.UserProfileData;
+import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
 @Service
 public interface KitePortfolioService {
-    public ResponseDataWrapper<UserProfileData> getUserProfile();
+    public ResponseDataWrapper<UserProfileData> getUserProfile(HttpHeaders headers);
 }

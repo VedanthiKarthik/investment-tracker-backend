@@ -11,6 +11,5 @@ import lombok.ToString;
 public class UserProfileData {
     @JsonProperty(value = "user_name")
     private String userName;
-    @JsonProperty(value = "isUser")
-    private boolean isUser;
+    private String email;
 }

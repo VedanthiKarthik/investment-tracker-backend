@@ -49,8 +49,8 @@ public class KiteAuthServiceImpl implements KiteAuthService {
         if(status.toUpperCase().equals(AppConstants.SUCCESS_UPPERCASE)){
             HttpHeaders requestHeaders = new HttpHeaders();
 
-            String apiKey = "fetch from the evn";
-            String kiteSecret = "fetch from env";
+            String apiKey = "";
+            String kiteSecret = "";
             String checksum = hash.hash(apiKey+requestToken+kiteSecret);
             KiteServiceUtility.addKiteSessionHeader(requestHeaders);
             return kiteServiceHandler.getKiteSessionData("https://api.kite.trade/session/token", apiKey, requestToken, checksum, requestHeaders);
