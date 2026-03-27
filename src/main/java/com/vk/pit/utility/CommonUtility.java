@@ -1,12 +1,8 @@
 package com.vk.pit.utility;
 
-import com.vk.pit.constants.ResponseTypes;
-import com.vk.pit.entity.pojo.ResponseDataInfo;
+import com.vk.pit.global.ResponseTypes;
+import com.vk.pit.kite.ResponseDataInfo;
 
-
-
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
 import java.util.List;
 
 public class CommonUtility {

@@ -1,12 +1,10 @@
 package com.vk.pit.utility.hash;
 
-import lombok.Getter;
 import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.HexFormat;
 
 @Component("sha256Hash")
 public class Sha256Hash implements Hash {
