@@ -5,6 +5,7 @@ spring:
     context-path: "/personal-investment-tracker/api/v1/"
 kite:
   api_key: ${KITE_API_KEY}
+  api_secret: ${KITE_API_SECRET}
   version: ${KITE_API_VERSION}
   host:
     app_host: ${KITE_MAIN_HOST}
